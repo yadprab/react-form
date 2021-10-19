@@ -1,0 +1,72 @@
+#root,
+html,
+body,
+.outer--wrapper {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    padding: 3em 1em;
+    max-width: 480px;
+}
+
+.form--control {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 0 1.5em 0;
+
+    label {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 400;
+        letter-spacing: 0.195em;
+        margin: 0 0 16px 0;
+    }
+
+    input {
+        appearance: none;
+        border: none;
+        background-color: var(--input);
+        height: 40px;
+        color: var(--text);
+        padding: 0 0 0 1em;
+        width: 100%;
+    }
+
+    small {
+        color: var(--error);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.195em;
+        font-weight: 300;
+        @include flex-1;
+        justify-content: flex-start;
+        margin: 4px 0 0 0;
+
+        svg {
+            margin: 0 0 0 4px;
+        }
+    }
+}
+
+#submit {
+    @include large-button;
+    width: 100%;
+    color: var(--text);
+    background-color: var(--button);
+    border-radius: unset;
+}
+
+.pass--wrapper {
+    position: relative;
+}
+
+#show--pass {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    @include svg-button;
+}

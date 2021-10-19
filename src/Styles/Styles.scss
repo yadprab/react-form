@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
+:root {
+    --bg: hsla(275, 43%, 5%, 1);
+    --text: hsla(98, 80%, 98%, 1);
+    --input: hsla(274, 28%, 8%, 1);
+    --button: hsla(274, 16%, 8%, 1);
+    --error: hsla(49, 93%, 47%, 1);
+    --font: 'Roboto',
+        sans-serif;
+
+
+
+
+
+}
+
+@import './uti';
+@import './default';
+@import './form';
